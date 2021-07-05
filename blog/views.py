@@ -33,7 +33,7 @@ class Create_account(CreateView):
 
     def get(self, request, *args, **kwargs):
         form = UserCreateForm(request.POST)
-        return  render(request, 'create.html', {'form': form,})
+        return  render(request, 'blog/create.html', {'form': form,})
 
 create_account = Create_account.as_view()
 

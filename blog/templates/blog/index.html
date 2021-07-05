@@ -4,8 +4,9 @@
     {% if user.id  %}
     <p>ログインしました．</p>
     <p>こんにちは，{{ user.username }}さん</p>
-    <a href="{% url 'logout' %}">ログアウトする</a>
+    <a href="{% url 'login' %}">ログアウトする</a>
     <a href="{% url 'blog' %}">blogへ行く</a>
+    <a href="{% url 'create_account' %}">アカウントを作る</a>
     {% else %}
     <a href="{% url 'login' %}">ログイン</a>
     <a href="{% url 'create_account' %}">アカウント作成</a>
